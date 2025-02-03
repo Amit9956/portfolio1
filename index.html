@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/adobe-portfolio-icon-256x256-rtt11pow.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
 </head>
 <body class=" bg-[#010203]">
 
-    <div class="Main-Container w-full h-full">
+    <div class="Main-Container lg:w-full lg:h-full">
          
         <!-- this is my header portion -->
 
-        <header class="w-full bg-[#010203] shadow-md shadow-purple-600  flex items-center h-[10vh]">
+        <header class="lg:w-full  bg-[#010203] shadow-md shadow-purple-600 lg:fixed  lg:flex items-center h-[10vh]">
 
             <!-- logo -->
-             <div class="w-1/2 h-[10vh] px-5">
+             <div class="lg:w-1/2   h-[10vh] px-5">
                 <img class="h-full" src="https://static.vecteezy.com/system/resources/previews/010/889/628/large_2x/ak-initial-letters-logo-design-free-vector.jpg" alt="">
             </div>
-            <div class="w-1/2 cursor-pointer "> 
+            <div class="w-1/2 cursor-pointer lg:block hidden "> 
                 <ul class="flex  text-white justify-evenly text-xl font-semibold">
-                    <li class="hover:text-blue-600">Profile</li>
-                    <li class="hover:text-blue-600">Skills</li>
-                    <li class="hover:text-blue-600">Education</li>
-                    <li class="hover:text-blue-600">About</li>
-                    <li class="hover:text-blue-600">Project</li>
-                    <li class="hover:text-blue-600">Contacts</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">Profile</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">Skills</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">Education</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">About</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">Project</li>
+                    <li class="hover:text-blue-600 duration-200 hover:underline hover:scale-95">Contacts</li>
                 </ul>
             </div>
         </header>
@@ -34,23 +36,230 @@
 
         <div class="w-full  h-full">
             <div class="flex  lg:flex-row flex-col">
-                <div class="lg:w-1/2 w-full text-center mt-[15%]">
-                    <p class="text-5xl font-semibold  text-white"> I' am Amit Kumar</p>
-                    <p class="text-2xl mt-6 text-gray-400"> I am React.js Developer</p>
+                <div class="lg:w-1/2 w-auto text-center  mt-[8%]">
+                    <p class="lg:text-6xl text-5xl font-semibold  text-white"> I' am Amit Kumar</p>
+                    <br>
+                    <p class="lg:text-2xl  lg:pl-20 lg:text-start text-center  text-gray-200">I am a MERN stack developer skilled in building web 
+                        applications using MongoDB, Express.js, React, and Node.js</p>
+                    <p class="text-4xl lg:mt-6 mt-4 lg:pl-4 lg:text-start text-center lg:ml-16 text-white"> I am React.js Developer</p>
                     
+                    <button class="text-white font-semibold lg:hover:bg-green-500 hover:bg-red-600 px-5 py-4 lg:ml-0 lg:mt-20 mt-9   bg-blue-600 rounded-xl">Download Resume</button>
+       
                 </div>
                 <div class="lg:w-1/2  w-full  lg:m-32 lg:mt-32 mt-10 ">
-                    <img class="lg:w-[70%] w-[90%] lg:ml-32 ml-3 lg:rounded-2xl rounded-full  h-full shadow-md shadow-purple-700 transition-all duration-200 hover:scale-105 hover:shadow-orange-500" src="./business-concept-with-team-close-up.jpg" alt="">
+                    <img class="lg:w-[70%] w-[90%] lg:ml-32 ml-3 lg:rounded-2xl rounded-full  h-full shadow-md shadow-purple-700 transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:shadow-purple-700" src="./business-concept-with-team-close-up.jpg" alt="">
                 </div>
             </div>
-            <button class="text-white font-semibold hover:bg-green-500 px-5 py-4 lg:ml-40 lg:mt-0 mt-9  ml-24 bg-blue-600 rounded-xl">Download Resume</button>
-           
+        </div>
+       
+       
+        <!--skills -->
+
+        <div class="w-full h-screen">
+            <p class="text-center text-white text-5xl py-7 underline  hover:text-blue-600 font-sans font-semibold"><span class="shadow-xl  shadow-purple-700">SKILLS</span></p>
+            <div class="lg:w-[80%] lg:h-[70%] lg:m-16 lg:ml-52 ml-12 ">
+                <div class=" grid lg:grid-cols-4 grid-cols-2 lg:gap-0 gap-2 lg:p-0 p-6">
+                    <div class=" bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] h-[60%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/html.png" alt="">
+                        <p class="text-white text-center">Html</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] h-[60%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/tailwind.png" alt="">
+                        <p class="text-white text-center ">tailwindCss</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%]  " src="https://mern-rajesh-portfolio.web.app/assets/tech/css.png" alt="">
+                        <p class="text-white text-center ">Css</p>
+                    </div>
+                    <div class="bbg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/javascript.png" alt="">
+                        <p class="text-white text-center">javascript</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] h-full border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] " src="https://mern-rajesh-portfolio.web.app/assets/tech/git.png" alt="">
+                        <p class="text-white text-center ">Git</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/mongodb.png" alt="">
+                        <p class="text-white text-center ">Mongodb</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] h-12" src="https://mern-rajesh-portfolio.web.app/assets/tech/redux.png" alt="">
+                        <p class="text-white text-center">Redux</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="ppx-6 py-1 lg:h-[80%] h-12 " src="https://mern-rajesh-portfolio.web.app/assets/tech/material-ui.png" alt="">
+                        <p class="text-white text-center">Material ui</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/reactjs.png" alt="">
+                        <p class="text-white text-center ">React js</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%]" src="https://mern-rajesh-portfolio.web.app/assets/tech/nodejs.png" alt="">
+                        <p class="text-white text-center ">Node js</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] " src="https://mern-rajesh-portfolio.web.app/assets/tech/expressjs.png" alt="">
+                        <p class="text-white text-center  ">Express js</p>
+                    </div>
+                    <div class="bg-black w-[50%] lg:h-[80%] border border-gray-400 shadow-lg shadow-purple-700">
+                        <img class="px-6 py-1 lg:h-[80%] " src="https://mern-rajesh-portfolio.web.app/assets/tools/vscode.png" alt="">
+                        <p class="text-white text-center   ">Vs code</p>
+                    </div>
+    
+                </div>
+
+            </div>
         </div>
 
-       
+        <!-- Education -->
 
+        <div class="w-full h-full">
+            <p class="text-center text-white text-5xl py-4 underline  hover:text-blue-600 font-sans font-semibold"><span class="shadow-xl  shadow-purple-700">EDUCATION</span></p>
+            <div class="w-full  lg:h-[90vh] h-full">
+                <div class="flex lg:flex-row flex-col justify-evenly text-white">
+                    <div class="lg:w-[40%] w-full  lg:h-[40%]  h-full text-center  shadow-xl shadow-purple-700 rounded-full p-7 mt-8 ">
+                        <p class="text-5xl font-semibold text-gray-300"><i>Brijnandani Convent School (CBSE)</i></p>
+                        <p class="text-2xl text-blue-600">X-Central Board of Secondary Education (80.4 %)</p>
+                        <p class="font-semibold"><i>Chanduali, India</i></p>
+                        <p class="font-bold"><i>2018 – 2019</i></p>
+                    </div>
+                    <div class="lg:w-[40%] w-full  lg:h-[40%]  h-full text-center shadow-xl shadow-purple-700  rounded-full p-7 mt-8 ">
+                        <p class="text-5xl font-semibold text-gray-300"><i>Brijnandani Convent School (CBSE)</i></p>
+                        <p class="text-2xl text-blue-600">XII-Central Board of Secondary Education (69.4 %)</p>
+                        <p class="font-semibold"><i>Chanduali, India</i></p>
+                        <p class="font-bold"><i>2019 – 2020</i></p>
+                    </div>
+                </div>
+                <div class="lg:w-[40%] lg:h-[40%] w-full  text-center lg:ml-[30%] text-white  shadow-xl shadow-purple-700 rounded-full p-7 mt-8 ">
+                    <p class="text-5xl font-semibold text-gray-300"><i>Dr. A.P.J Abdul Kalam Technical University</i></p>
+                    <p class="text-3xl text-blue-600">Bachelor of Technology (B. Tech)</p>
+                    <p class="text-xl">Computer Science and Engineering (CGPA 7.2)</p>
+                    <p class="font-semibold"><i>Lucknow, India</i></p>
+                    <p class="font-bold"><i>2020 – 2024</i></p>
+                </div>
+            </div>
+        </div>  
+
+        <!-- About -->
+
+
+        <div class="lg:w-full w-full  lg:mt-0 mt-20 lg:h-full ">
+            <p class="text-center   text-white text-5xl py-4 underline  hover:text-blue-600 font-sans font-semibold"><span class="shadow-xl  shadow-purple-700">ABOUT</span></p>
+            <div class="lg:w-[80%] w-full  lg:ml-40 lg:p-0 p-6  h-full flex lg:flex-row flex-col lg:mt-20  lg:h-[70%] shadow-lg shadow-purple-700">
+                <div class="lg:w-1/2 w-full  ">
+                <p class="  lg:text-5xl text-2xl font-sans font-semibold text-slate-100">Hello! My name is Amit Kumar</p>
+                <p class="py-4 lg:text-2xl text-gray-200"> I am a self-taught programmer with a passion for learning and exploring new technologies. I have a strong background in FrontEnd Development and improving full-stack development and am always eager to expand my skillset and take on new challenges. In my free time, I enjoy sipping on a cup of tea (or coffee) and watching a game of cricket. As a dedicated and driven individual, I am constantly seeking   out opportunities to grow and improve as a programmer.</p> 
+                </div>
+                <div class="lg:w-1/2 w-full ">
+                    <img class="h-full" src="https://spectrum.ieee.org/media-library/image.jpg?id=25587918" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- project -->
+
+        <div class="w-full h-full mt-20">
+            <p class="text-center text-white text-5xl py-4 underline  hover:text-blue-600 font-sans font-semibold"><span class="shadow-xl  shadow-purple-700">PROJECT</span></p>
+            <div class="lg:w-[80%] w-full grid lg:grid-cols-3 grid-cols-1 text-white justify-between pl-10  lg:ml-32 lg:mt-16 gap-5 ">
+                <div class="w-[90%] h-full bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/6.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">Movie WebApp</p>
+                    <p class="gap-2 mt-2 text-white ">A Simple Movie App Using Pure ReactJs - made for just revision purpose</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">React CSS3 JavaScript API </p>
+                    <div class="w-full mt-4 mb-20">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+                <div class="w-[90%] h-full  bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/6.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">Movie WebApp</p>
+                    <p class="gap-2 mt-2 text-white ">A Simple Movie App Using Pure ReactJs - made for just revision purpose</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">React CSS3 JavaScript API </p>
+                    <div class="w-full mt-4 mb-20">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+                <div class="w-[90%] h-full bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/6.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">Movie WebApp</p>
+                    <p class="gap-2 mt-2 text-white ">A Simple Movie App Using Pure ReactJs - made for just revision purpose</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">React CSS3 JavaScript API </p>
+                    <div class="w-full mt-4 mb-20">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+                <div class="w-[90%] h-full bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/3.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">Complete React Website</p>
+                    <p class="gap-2 mt-2 text-white ">I made this whole website from scratch with latest versions of React. This Complete Demo Website is Made using ReactJs, HTML, CSS. This website is a complete demo website which includes all the components of ReactJs.</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">React CSS3  </p>
+                    <div class="w-full mt-4 mb-20">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+                <div class="w-[90%] h-full bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/11.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">YouTube Clone using ReactJs</p>
+                    <p class="gap-2 mt-2 text-white ">I created a YouTube clone using ReactJs and Material UI. Used Rapid API to fetch data and learnt how to fetch data using API. The API used here was YouTube v3.</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">ReactJs CSs Material-Ui API </p>
+                    <div class="w-full mt-4 mb-20">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+                <div class="w-[90%] h-full bg-[#1A202C] shadow-lg shadow-purple-700">
+                    <img src="https://yashkapure.netlify.app/images/10.png" alt="">
+                    <p class="gap-3  text-xl text-red-600">Netflix Clone using ReactJs</p>
+                    <p class="gap-2 mt-2 text-white ">I created a Netflix clone using ReactJs and Sass. This is a clone of Netflix website. And played a lot with Api.</p>
+                    <p class="text-center text-xl font-semibold">Stack</p>
+                    <p class="p-4 ">React CSS3 JavaScript API </p>
+                    <div class="w-full mt-4 ">
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40">Visit</button>
+                        <button class="px-5 py-2  bg-black text-white rounded-full w-40 hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Git Hub</button>
+                    </div>    
+                </div>
+
+            </div>
+        
+        </div>
+
+        <!-- contacts -->
+
+        <div class="w-full h-full">
+            <p class="text-center text-white text-5xl py-4 underline mt-16  hover:text-blue-600 font-sans font-semibold"><span class="shadow-xl  shadow-purple-700">CONTACTS</span></p>
+            <div>
+                <form >
+                    <div class="flex flex-col  items-center gap-5">
+                        <hr class="border-none w-[120px] h-[5px] bg-[#a363aa] mb-[20px] rounded-[10px] "/>
+                        <input type="hidden" name="access_key" value="75260822-6dde-4ecf-80ec-b299298051a9">
+                        <input type="text" name="name" placeholder="Your Name" class="w-[400px]  h-[50px] border-[2px]   focus:border-[#ff994f] outline-none pl-[25px] font-[500] text-[#666] rounded-[50px] " required> 
+                        <input type="text" name="name" placeholder="email" class="w-[400px] h-[50px] border-[2px]  focus:border-[#ff994f] outline-none pl-[25px] font-[500] text-[#666] rounded-[50px]" required>
+                        <textarea name="message" placeholder="Your Massgae " id="" class="h-[140px] w-[400px] border-[2px]  focus:border-[#ff994f] pt-[15px] pl-[25px] rounded-[20px]" required></textarea> 
+                        <button class="px-5 py-2 w-[25%] font-semibold bg-black text-white rounded-full  hover:bg-gradient-to-r from-blue-700 to-pink-600 shadow-lg shadow-blue-700">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+
+        <!-- footer -->
+        <div class="w-full h-[10vh] flex items-center border border-t-2 justify-evenly bg-[#1A202C] mt-28">
+            <p class="text-white">© 2023 Amit Kumar. All rights reserved</p>
+            <p class=""><i class="fa-brands fa-twitter "></i>  <i class="fa-brands fa-instagram pl-4"></i> </p>
+        </div>
+
+        
     </div>
-    
-           
 </body>
 </html>
